@@ -1,0 +1,60 @@
+/* zerando todo css */
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row; /* eixo principal: horizontal (padrão) */  
+    justify-content: center; /* eixo principal (horizontal - row): centro */
+    align-items: center; /* eixo secundário (vertical - column): centro */
+    background-color: #f6f7fb;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0rem 2rem 3rem 0rem rgba(43, 0, 123, 0.671); /* [X: horizontal] [Y: vertical] [Esfumado/Blur] [Extensão/Spread] [Cor: R, G, B, Opacidade] */
+    padding: 2rem 5rem;
+    border-radius: 2rem; /* arrendondar borda */
+}
+
+.results div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 7rem;
+
+    img {
+        width: 100px;
+    }
+}
+
+.user-result {
+    transform: rotate(90deg);
+}
+
+.conputer-result {
+    transform: rotateZ(-90deg) rotateY(180deg);/* [rotateZ: 2D - relógio] [rotateY: 3D - vertical - porta] [rotateX: 3D - horizontal - gangorra] */
+}
+
+.result.text {
+
+}
+
+.options {
+
+}
+
+.option-image {
+
+    img {
+        width: 50px;
+    }
+}
